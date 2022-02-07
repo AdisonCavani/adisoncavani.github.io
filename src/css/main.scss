@@ -1,0 +1,9 @@
+@import 'colors.scss';
+
+html {
+    background-color: $bg;
+}
+
+html[data-theme='dark'] {
+    $bg: #1d1d1d;
+}
