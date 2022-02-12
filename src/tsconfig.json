@@ -6,7 +6,7 @@
         "esModuleInterop": true,
         "skipLibCheck": true,
         "forceConsistentCasingInFileNames": true,
-        "outDir": "../build/js"
+        "outDir": "../dist/js"
     },
     "$schema": "https://json.schemastore.org/tsconfig",
     "display": "Recommended",

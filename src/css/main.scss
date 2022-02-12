@@ -1,9 +1,9 @@
-@import 'colors.scss';
+@use 'colors';
 
-html {
-    background-color: $bg;
+* {
+    box-sizing: border-box;
 }
 
-html[data-theme='dark'] {
-    $bg: #1d1d1d;
+body {
+    background-color: var(--bg);
 }
