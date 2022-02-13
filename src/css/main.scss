@@ -6,4 +6,6 @@
 
 body {
     background-color: var(--bg);
+    transition: all .35s ease-in-out;
+    transition-property: background-color;
 }
