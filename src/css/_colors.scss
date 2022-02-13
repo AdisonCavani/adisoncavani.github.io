@@ -18,19 +18,19 @@
     --btn-outline: transparent;
     
     // button-switch
-    --btn-switch-bg: #0070f3;
-    --btn-switch-bg-hover: #fefefe;
-    --btn-switch-bg-active: #fefefe;
+    --btn-switch-bg: #805ad5;
+    --btn-switch-bg-hover: #6b46c1;
+    --btn-switch-bg-active: #553c9a;
     
-    --btn-switch-fg: #fefefe;
-    --btn-switch-fg-hover: var(--btn-switch-bg);
-    --btn-switch-fg-active: var(--btn-switch-bg);
+    --btn-switch-fg: #fff;
+    --btn-switch-fg-hover: var(--btn-switch-fg);
+    --btn-switch-fg-active: var(--btn-switch-fg);
     
     --btn-switch-border: var(--btn-switch-bg);
-    --btn-switch-border-hover: var(--btn-switch-bg);
-    --btn-switch-border-active: var(--btn-switch-bg);
+    --btn-switch-border-hover: var(--btn-switch-bg-hover);
+    --btn-switch-border-active: var(--btn-switch-bg-active);
     
-    --btn-switch-outline: transparent;
+    --btn-switch-outline: #8abbe2;
 }
 
 html[data-theme="dark"] {
