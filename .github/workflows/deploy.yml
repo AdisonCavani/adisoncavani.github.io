@@ -14,7 +14,8 @@ jobs:
         run: |
           cd src
           npm ci
-          npm run build
+          npm run build-scss
+          npm run build-ts
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.3

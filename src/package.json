@@ -3,6 +3,10 @@
     "@tsconfig/recommended": "^1.0.1"
   },
   "scripts": {
-    "build": "tsc --build --clean"
+    "build-scss": "node-sass css -o ../docs/css --output-style compressed --source-map true",
+    "build-ts": "tsc --build --clean"
+  },
+  "dependencies": {
+    "node-sass": "^7.0.1"
   }
 }
