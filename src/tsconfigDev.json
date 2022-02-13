@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "target": "ES2015",
+        "module": "commonjs",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "removeComments": true,
+        "allowJs": false,
+        "forceConsistentCasingInFileNames": true,
+        "outDir": "js"
+    },
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "display": "Recommended",
+    "exclude": [
+        "node_modules"
+    ],
+    "include": [
+        "js/*"
+    ]
+}

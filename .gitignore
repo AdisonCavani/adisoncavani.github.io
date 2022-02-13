@@ -105,5 +105,8 @@ dist
 
 # Build files
 build/
+
+# Dev build files
 src/css/*.css
 src/css/*.css.map
+src/js/*.js
