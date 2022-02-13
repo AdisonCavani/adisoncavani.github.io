@@ -4,7 +4,7 @@
   },
   "scripts": {
     "build-scss": "node-sass css -o ../docs/css --output-style compressed --source-map true",
-    "build-ts": "tsc --build --clean"
+    "build-ts": "tsc --build"
   },
   "dependencies": {
     "node-sass": "^7.0.1"
