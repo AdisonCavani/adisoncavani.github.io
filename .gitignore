@@ -104,4 +104,6 @@ dist
 .tern-port
 
 # Build files
-dist/
+build/
+src/css/*.css
+src/css/*.css.map
