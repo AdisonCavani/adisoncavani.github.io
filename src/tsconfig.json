@@ -5,6 +5,8 @@
         "strict": true,
         "esModuleInterop": true,
         "skipLibCheck": true,
+        "removeComments": true,
+        "allowJs": false,
         "forceConsistentCasingInFileNames": true,
         "outDir": "../dist/js"
     },

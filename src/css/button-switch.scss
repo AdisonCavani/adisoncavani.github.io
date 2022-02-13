@@ -1,8 +1,8 @@
 @use 'colors';
 
-button {
-    color: var(--btn-fg);
-    background-color: var(--btn-bg);
+.btn-switch {
+    color: var(--btn-switch-fg);
+    background-color: var(--btn-switch-bg);
     
     cursor: pointer;
     user-select: none;
@@ -14,24 +14,24 @@ button {
     border-width: 1px;
     border-radius: 5px;
     border-style: solid;
-    border-color: var(--btn-border);
+    border-color: var(--btn-switch-border);
     
     transition: all .225s ease-in-out;
     transition-property: color, background-color, border-color, box-shadow;
 }
 
-button:hover {
-    color: var(--btn-fg-hover);
-    background-color: var(--btn-bg-hover);
-    border-color: var(--btn-border-hover);
+.btn-switch:hover {
+    color: var(--btn-switch-fg-hover);
+    background-color: var(--btn-switch-bg-hover);
+    border-color: var(--btn-switch-border-hover);
 }
 
-button:active {
-    color: var(--btn-fg-active);
-    background-color: var(--btn-bg-active);
-    border-color: var(--btn-border-active);
+.btn-switch:active {
+    color: var(--btn-switch-fg-active);
+    background-color: var(--btn-switch-bg-active);
+    border-color: var(--btn-switch-border-active);
 }
 
-button:focus {
-    box-shadow: 0px 0px 0px 3px var(--btn-outline);
+.btn-switch:focus {
+    box-shadow: 0px 0px 0px 3px var(--btn-switch-outline);
 }

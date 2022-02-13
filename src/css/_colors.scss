@@ -16,6 +16,21 @@
     --btn-border-active: var(--btn-bg);
     
     --btn-outline: transparent;
+    
+    // button-switch
+    --btn-switch-bg: #0070f3;
+    --btn-switch-bg-hover: #fefefe;
+    --btn-switch-bg-active: #fefefe;
+    
+    --btn-switch-fg: #fefefe;
+    --btn-switch-fg-hover: var(--btn-switch-bg);
+    --btn-switch-fg-active: var(--btn-switch-bg);
+    
+    --btn-switch-border: var(--btn-switch-bg);
+    --btn-switch-border-hover: var(--btn-switch-bg);
+    --btn-switch-border-active: var(--btn-switch-bg);
+    
+    --btn-switch-outline: transparent;
 }
 
 html[data-theme="dark"] {
@@ -36,4 +51,19 @@ html[data-theme="dark"] {
     --btn-border-active: var(--btn-bg-active);
     
     --btn-outline: #356995;
+        
+    // btn-switch
+    --btn-switch-bg: #fbd38d;
+    --btn-switch-bg-hover: #f6ad55;
+    --btn-switch-bg-active: #ed8936;
+    
+    --btn-switch-fg: #1a202c;
+    --btn-switch-fg-hover: var(--btn-switch-fg);
+    --btn-switch-fg-active: var(--btn-switch-fg);
+    
+    --btn-switch-border: var(--btn-switch-bg);
+    --btn-switch-border-hover: var(--btn-switch-bg-hover);
+    --btn-switch-border-active: var(--btn-switch-bg-active);
+    
+    --btn-switch-outline: #356995;
 }
