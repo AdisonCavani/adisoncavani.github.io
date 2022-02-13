@@ -8,7 +8,7 @@
         "removeComments": true,
         "allowJs": false,
         "forceConsistentCasingInFileNames": true,
-        "outDir": "/build/js"
+        "outDir": "../docs/js"
     },
     "$schema": "https://json.schemastore.org/tsconfig",
     "display": "Recommended",
