@@ -98,9 +98,3 @@
     --icon-fill: var(--btn-switch-fg);
     --icon-fill-hover: var(--btn-switch-fg-hover);
 }
-
-@media (hover: none) {
-    .theme-toggle {
-        --size: 48px;
-    }
-}
