@@ -31,6 +31,10 @@
     --btn-switch-border-active: var(--btn-switch-bg-active);
     
     --btn-switch-outline: #8abbe2;
+    
+    // Panel
+    --secondary: rgba(255, 255, 255, 0.08);
+    --secondary-text: rgba(255, 255, 255, 0.92);
 }
 
 html[data-theme="dark"] {
