@@ -10,54 +10,74 @@
         content="script-src 'self' 'unsafe-inline' https: static.cloudflareinsights.com; connect-src cloudflareinsights.com microanalytics.io">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/text.css">
     <link rel="stylesheet" type="text/css" href="css/button.css">
     <link rel="stylesheet" type="text/css" href="css/button-switch.css">
     <link rel="stylesheet" type="text/css" href="css/theme-switch.css">
 
+    <!-- Theme -->
     <script src="js/theme-toggle.js"></script>
-    <script data-host="https://microanalytics.io" data-dnt="false" src="https://microanalytics.io/js/script.js" id="ZwSg9rf6GA" async defer></script>
+
+    <!-- Analytics -->
+    <script data-host="https://microanalytics.io" data-dnt="false" src="https://microanalytics.io/js/script.js"
+        id="ZwSg9rf6GA" async defer></script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link rel="preload"
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=M+PLUS+Rounded+1c:wght@100;200;300;400;500;600;700;800;900&display=swap"
         as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=M+PLUS+Rounded+1c:wght@100;200;300;400;500;600;700;800;900&display=swap"
             rel="stylesheet" type="text/css" />
     </noscript>
+
+    <!-- FA Icons -->
+    <script defer src="https://kit.fontawesome.com/f03b3a9590.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <nav class="navbar">
-        <button class="btn-switch" id="theme-toggle">
-            <div class="theme-toggle">
-                <svg class="sun-and-moon" width="24" height="24" viewBox="0 0 24 24">
-                    <mask class="moon" id="moon-mask">
-                        <rect x="0" y="0" width="100%" height="100%" fill="white" />
-                        <circle cx="24" cy="10" r="6" fill="black" />
-                    </mask>
-                    <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor" />
-                    <g class="sun-beams" stroke="currentColor">
-                        <line x1="12" y1="1" x2="12" y2="3" />
-                        <line x1="12" y1="21" x2="12" y2="23" />
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
-                        <line x1="1" y1="12" x2="3" y2="12" />
-                        <line x1="21" y1="12" x2="23" y2="12" />
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
-                    </g>
-                </svg>
+        <div class="nav-container">
+            <div class="nav-btn">
+                <button class="btn-switch" id="theme-toggle">
+                    <div class="theme-toggle">
+                        <svg class="sun-and-moon" width="24" height="24" viewBox="0 0 24 24">
+                            <mask class="moon" id="moon-mask">
+                                <rect x="0" y="0" width="100%" height="100%" fill="white" />
+                                <circle cx="24" cy="10" r="6" fill="black" />
+                            </mask>
+                            <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor" />
+                            <g class="sun-beams" stroke="currentColor">
+                                <line x1="12" y1="1" x2="12" y2="3" />
+                                <line x1="12" y1="21" x2="12" y2="23" />
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                                <line x1="1" y1="12" x2="3" y2="12" />
+                                <line x1="21" y1="12" x2="23" y2="12" />
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                            </g>
+                        </svg>
+                    </div>
+                </button>
             </div>
-        </button>
+        </div>
     </nav>
-    <main>
-        <div class="secondary">Hello, I'm a full-stack developer based in Japan!</div>
-        <button class="button">Create a Team</button><br><br>
+    <main class="content">
+        <div class="secondary">Hello, I'm a full-stack developer based in Poland!</div>
+        <h2>Adison Cavani</h2>
+
+        <div class="img-container">
+            <img class="img" src="img/profile_picture.webp" alt="Profile picture">
+        </div>
+
+        <button class="button">My portfolio <span class="btn-icon"><i
+                    class='fas fa-angle-right'></i></span></button><br><br>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non pellentesque libero. Cras dapibus dolor a
             arcu

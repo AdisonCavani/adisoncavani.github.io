@@ -1,0 +1,41 @@
+@use 'colors';
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    
+    background-color: var(--bg);
+    transition: all .35s ease-in-out;
+    transition-property: background-color;
+}
+
+.nav-container {
+    display: flex;
+    padding: .5rem;
+}
+
+.nav-btn {
+    
+}
+
+.content {
+    padding-top: 3.5rem;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+    
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+}
+
+.img {
+    border-color: var(--img-border);
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 2px;
+    
+    max-width: 100px;
+}
+
+.img-container {
+    
+}

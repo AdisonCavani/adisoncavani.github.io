@@ -1,4 +1,6 @@
 :root {
+    --text: #000;
+    
     --bg: #fefefe;
     --panel-bg: #e6e6e6;
     --panel-bg-light: #f9f9f9;
@@ -33,11 +35,15 @@
     --btn-switch-outline: #8abbe2;
     
     // Panel
-    --secondary: rgba(255, 255, 255, 0.08);
-    --secondary-text: rgba(255, 255, 255, 0.92);
+    --secondary: #eaeaea;
+    
+    // Images
+    --img-border: transparent;
 }
 
 html[data-theme="dark"] {
+    --text: rgba(255, 255, 255, 0.92);
+    
     --bg: #202023;
     --panel-bg: #2b2b2d;
     --panel-bg-light: #3e3e3e;
@@ -70,4 +76,10 @@ html[data-theme="dark"] {
     --btn-switch-border-active: var(--btn-switch-bg-active);
     
     --btn-switch-outline: #356995;
+    
+    // Panel
+    --secondary: rgba(255, 255, 255, 0.08);
+    
+    // Images
+    --img-border: rgba(255, 255, 255, 0.8);
 }
