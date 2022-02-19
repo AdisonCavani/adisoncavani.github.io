@@ -23,7 +23,7 @@ jobs:
           npm run build-scss
           npm run build-ts
           cp -R *.html ../docs
-          cp -R img/ ../img
+          cp -R img/* ../img
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.3
