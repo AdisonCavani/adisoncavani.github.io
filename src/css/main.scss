@@ -27,7 +27,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-    font-size: 2.25rem;
+    font-size: 1.875rem;
+    line-height: 1.3;
+    transition: all .2s ease-in-out;
+    transition-property: font-size, line-height;
+}
+
+@media screen and (min-width: 48em) {
+    h2 {
+        font-size: 2.25rem;
+        line-height: 1.2;
+    }
 }
 
 h3 {

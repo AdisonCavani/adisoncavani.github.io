@@ -20,7 +20,7 @@
     border-color: var(--btn-border);
     
     transition: all .225s ease-in-out;
-    transition-property: color, background-color, border-color, box-shadow;
+    transition-property: color, background-color, border-color, box-shadow, width;
 }
 
 .button:hover {
