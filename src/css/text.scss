@@ -15,3 +15,26 @@
     text-indent: 1em;
     text-align: justify;
 }
+
+.title {
+    font-size: 1.875rem;
+    line-height: 1.2;
+    letter-spacing: -.05em;
+    font-weight: 700;
+}
+
+.title-link {
+    background-color: transparent;
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.title-span {
+    font-weight: bold;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    height: 30px;
+    line-height: 20px;
+    padding: 10px;
+}

@@ -1,6 +1,11 @@
 @use 'colors';
 
 .btn-switch {
+    aspect-ratio: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
     color: var(--btn-switch-fg);
     background-color: var(--btn-switch-bg);
     

@@ -43,7 +43,7 @@
     // Images
     --img-border: transparent;
     
-    --footer-opacity: 0.55;
+    --title-fg: rgba(255, 255, 255, .92)
 }
 
 html[data-theme="dark"] {
@@ -90,6 +90,4 @@ html[data-theme="dark"] {
     
     // Images
     --img-border: rgba(255, 255, 255, 0.8);
-    
-    --footer-opacity: 0.4;
 }
