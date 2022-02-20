@@ -6,7 +6,7 @@
     
     backdrop-filter: blur(10px);
     
-    background-color: #20202380;
+    background-color: var(--nav-bg-color);
     transition: all .35s ease-in-out;
     transition-property: background-color;
 }

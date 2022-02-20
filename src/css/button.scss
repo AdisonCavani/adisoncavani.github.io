@@ -4,12 +4,14 @@
     color: var(--btn-fg);
     background-color: var(--btn-bg);
     
+    display: inline-flex;
     cursor: pointer;
     user-select: none;
     padding: 8px 12px;
     font-size: 0.875rem;
     font-family: "Inter", "sans-serif";
     font-weight: 500;
+    line-height: 1.2;
     
     outline: 0;
     border-width: 2px;
