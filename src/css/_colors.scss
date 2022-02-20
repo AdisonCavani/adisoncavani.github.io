@@ -1,12 +1,12 @@
 :root {
     --text: #000;
-    --link-fg: #ff63c3;
+    --link-fg: var(--btn-bg);
     
-    --bg: #fefefe;
+    --bg: rgb(240, 231, 219);
     --panel-bg: #e6e6e6;
     --panel-bg-light: #f9f9f9;
     
-    --nav-bg-color: rgb(255, 255, 255, .25);
+    --nav-bg-color: rgba(240, 231, 219, .25);
     
     --btn-bg: #0070f3;
     --btn-bg-hover: #fefefe;
@@ -38,14 +38,17 @@
     --btn-switch-outline: #8abbe2;
     
     // Panel
-    --secondary: #eaeaea;
+    --secondary: rgba(255, 255, 255, 0.36);
     
     // Images
     --img-border: transparent;
+    
+    --footer-opacity: 0.55;
 }
 
 html[data-theme="dark"] {
     --text: rgba(255, 255, 255, 0.92);
+    --link-fg: #ff63c3;
     
     --bg: #202023;
     --panel-bg: #2b2b2d;
@@ -87,4 +90,6 @@ html[data-theme="dark"] {
     
     // Images
     --img-border: rgba(255, 255, 255, 0.8);
+    
+    --footer-opacity: 0.4;
 }

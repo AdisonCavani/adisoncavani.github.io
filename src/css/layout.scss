@@ -7,7 +7,7 @@
     backdrop-filter: blur(10px);
     
     background-color: var(--nav-bg-color);
-    transition: all .35s ease-in-out;
+    transition: all .3s ease-in-out;
     transition-property: background-color;
 }
 
@@ -81,6 +81,6 @@
 
 .footer {
     text-align: center;
-    opacity: 0.4;
+    opacity: var(--footer-opacity);
     font-size: .875rem;
 }
