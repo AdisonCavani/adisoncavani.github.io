@@ -3,6 +3,7 @@
 .navbar {
     position: fixed;
     width: 100%;
+    z-index: 1; // Fixes link order
     
     backdrop-filter: blur(10px);
     
