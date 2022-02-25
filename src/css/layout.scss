@@ -52,11 +52,15 @@
 
 .nav-btn {
     display: flex;
-    text-align: right;
     margin-left: auto;
 }
 
+.theme-toggle2 {
+    
+}
+
 .nav-menu-res {
+    visibility: visible;
     margin-left: .5rem;
 }
 
@@ -115,7 +119,7 @@ article {
     margin-right: 1em;
 }
 
-.footer {
+footer {
     text-align: center;
     opacity: .55;
     font-size: .875rem;
@@ -125,6 +129,10 @@ article {
 @media screen and (min-width: 48em) {
     .menu-entry {
         display: flex;
+    }
+    
+    .nav-menu-res {
+        visibility: collapse;
     }
 
     .img-container {

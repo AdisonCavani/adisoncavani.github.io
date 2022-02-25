@@ -8,19 +8,15 @@
     
     --nav-bg-color: rgba(240, 231, 219, .25);
     
-    --btn-bg: #0070f3;
-    --btn-bg-hover: #fefefe;
-    --btn-bg-active: #fefefe;
+    --btn-bg: #319795;
+    --btn-bg-hover: #2c7a7b;
+    --btn-bg-active: #285e61;
     
-    --btn-fg: #fefefe;
-    --btn-fg-hover: var(--btn-bg);
-    --btn-fg-active: var(--btn-bg);
+    --btn-fg: #fff;
+    --btn-fg-hover: var(--btn-fg);
+    --btn-fg-active: var(--btn-fg);
     
-    --btn-border: var(--btn-bg);
-    --btn-border-hover: var(--btn-bg);
-    --btn-border-active: var(--btn-bg);
-    
-    --btn-outline: transparent;
+    --btn-outline: #88b8df;
     
     // button-switch
     --btn-switch-bg: #805ad5;
@@ -30,10 +26,6 @@
     --btn-switch-fg: #fff;
     --btn-switch-fg-hover: var(--btn-switch-fg);
     --btn-switch-fg-active: var(--btn-switch-fg);
-    
-    --btn-switch-border: var(--btn-switch-bg);
-    --btn-switch-border-hover: var(--btn-switch-bg-hover);
-    --btn-switch-border-active: var(--btn-switch-bg-active);
     
     --btn-switch-outline: #8abbe2;
 

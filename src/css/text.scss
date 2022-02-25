@@ -11,9 +11,14 @@
     transition-property: background-color;
 }
 
-.desc {
+p {
     text-indent: 1em;
     text-align: justify;
+}
+
+.desc {
+    text-indent: 0;
+    text-align: left;
 }
 
 .title {
