@@ -36,6 +36,21 @@
     --btn-switch-border-active: var(--btn-switch-bg-active);
     
     --btn-switch-outline: #8abbe2;
+
+    // button-menu
+    --btn-menu-bg: #805ad5;
+    --btn-menu-bg-hover: #6b46c1;
+    --btn-menu-bg-active: #553c9a;
+    
+    --btn-menu-fg: #fff;
+    --btn-menu-fg-hover: var(--btn-menu-fg);
+    --btn-menu-fg-active: var(--btn-menu-fg);
+    
+    --btn-menu-border: var(--btn-menu-bg);
+    --btn-menu-border-hover: var(--btn-menu-bg-hover);
+    --btn-menu-border-active: var(--btn-menu-bg-active);
+    
+    --btn-menu-outline: #8abbe2;
     
     // Panel
     --secondary: rgba(255, 255, 255, 0.36);
@@ -84,7 +99,22 @@ html[data-theme="dark"] {
     --btn-switch-border-active: var(--btn-switch-bg-active);
     
     --btn-switch-outline: #356995;
+
+    // button-menu
+    --btn-menu-bg: transparent;
+    --btn-menu-bg-hover: #313133;
+    --btn-menu-bg-active: #434346;
     
+    --btn-menu-fg: rgba(255, 255, 255, 0.92);
+    --btn-menu-fg-hover: var(--btn-menu-fg);
+    --btn-menu-fg-active: var(--btn-menu-fg);
+    
+    --btn-menu-border: rgba(255, 255, 255, 0.16);
+    --btn-menu-border-hover: #525254;
+    --btn-menu-border-active: #616163;
+    
+    --btn-menu-outline: #356995;
+
     // Panel
     --secondary: rgba(255, 255, 255, 0.08);
     

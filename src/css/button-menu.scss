@@ -1,0 +1,44 @@
+@use 'colors';
+
+.btn-menu {
+    aspect-ratio: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: var(--btn-menu-fg);
+    background-color: var(--btn-menu-bg);
+    
+    cursor: pointer;
+    user-select: none;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+
+    height: 2.5rem;
+    min-width: 2.5rem;
+    
+    outline: 0;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: .375rem;
+    border-color: var(--btn-menu-border);
+    
+    transition: all .225s ease-in-out;
+    transition-property: color, background-color, border-color, box-shadow;
+}
+
+.btn-menu:hover {
+    color: var(--btn-menu-fg-hover);
+    background-color: var(--btn-menu-bg-hover);
+    border-color: var(--btn-menu-border-hover);
+}
+
+.btn-menu:active {
+    color: var(--btn-menu-fg-active);
+    background-color: var(--btn-menu-bg-active);
+    border-color: var(--btn-menu-border-hover);
+}
+
+.btn-menu:focus {
+    box-shadow: 0px 0px 0px 3px var(--btn-menu-outline);
+}
