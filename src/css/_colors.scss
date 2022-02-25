@@ -30,17 +30,17 @@
     --btn-switch-outline: #8abbe2;
 
     // button-menu
-    --btn-menu-bg: #805ad5;
-    --btn-menu-bg-hover: #6b46c1;
-    --btn-menu-bg-active: #553c9a;
+    --btn-menu-bg: transparent;
+    --btn-menu-bg-hover: #edf2f7;
+    --btn-menu-bg-active: #e2e8f0;
     
-    --btn-menu-fg: #fff;
+    --btn-menu-fg: #1A202C;
     --btn-menu-fg-hover: var(--btn-menu-fg);
     --btn-menu-fg-active: var(--btn-menu-fg);
     
-    --btn-menu-border: var(--btn-menu-bg);
-    --btn-menu-border-hover: var(--btn-menu-bg-hover);
-    --btn-menu-border-active: var(--btn-menu-bg-active);
+    --btn-menu-border: #e2e8f0;
+    --btn-menu-border-hover: #e2e8f0;
+    --btn-menu-border-active: #e2e8f0;
     
     --btn-menu-outline: #8abbe2;
     
