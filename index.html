@@ -58,27 +58,29 @@
                     rel="noopener noreferrer">Source</a>
             </div>
             <div class="nav-btn">
-                <button class="btn-switch" id="theme-toggle">
-                    <div class="theme-toggle">
-                        <svg class="sun-and-moon" width="24" height="24" viewBox="0 0 24 24">
-                            <mask class="moon" id="moon-mask">
-                                <rect x="0" y="0" width="100%" height="100%" fill="white" />
-                                <circle cx="24" cy="10" r="6" fill="black" />
-                            </mask>
-                            <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor" />
-                            <g class="sun-beams" stroke="currentColor">
-                                <line x1="12" y1="1" x2="12" y2="3" />
-                                <line x1="12" y1="21" x2="12" y2="23" />
-                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
-                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
-                                <line x1="1" y1="12" x2="3" y2="12" />
-                                <line x1="21" y1="12" x2="23" y2="12" />
-                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
-                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
-                            </g>
-                        </svg>
-                    </div>
-                </button>
+                <div class="theme-toggle2">
+                    <button class="btn-switch" id="theme-toggle">
+                        <div class="theme-toggle">
+                            <svg class="sun-and-moon" width="24" height="24" viewBox="0 0 24 24">
+                                <mask class="moon" id="moon-mask">
+                                    <rect x="0" y="0" width="100%" height="100%" fill="white" />
+                                    <circle cx="24" cy="10" r="6" fill="black" />
+                                </mask>
+                                <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor" />
+                                <g class="sun-beams" stroke="currentColor">
+                                    <line x1="12" y1="1" x2="12" y2="3" />
+                                    <line x1="12" y1="21" x2="12" y2="23" />
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                                    <line x1="1" y1="12" x2="3" y2="12" />
+                                    <line x1="21" y1="12" x2="23" y2="12" />
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                                </g>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
                 <div class="nav-menu-res">
                     <button class="btn-menu"><i class="fa-solid fa-bars"></i></button>
                 </div>
@@ -91,7 +93,7 @@
         <div id="profile" class="profile-container">
             <div class="profile">
                 <h2>Takuya Matsuyama</h2>
-                <p>Digital Craftsman ( Artist / Developer / Designer )</p>
+                <p class="desc">Digital Craftsman ( Artist / Developer / Designer )</p>
             </div>
             <div class="img-container">
                 <img class="img" src="img/profile_picture.webp" alt="Profile picture" loading="lazy">
@@ -100,17 +102,17 @@
 
         <div id="work" class="text-container">
             <h3>Work</h3>
-            <p class="desc">Takuya is a freelance and a full-stack developer based in Osaka with a passion for
+            <p>Takuya is a freelance and a full-stack developer based in Osaka with a passion for
                 building digital
                 services/stuff he
                 wants. He has a knack for all things launching products, from planning and designing all the way to
                 solving real-life
                 problems with code. When not online, he loves hanging out with his camera. Currently, he is living off
                 of his own
-                product called <a class="link" href="#work">Inkdrop</a>.</p>
+                product called <a href="#work">Inkdrop</a>.</p>
             <div class="text-btn">
                 <button class="button">My portfolio<span class="btn-icon"><i
-                            class="fa-solid fa-angle-right"></i></span></button>
+                            class="fas fa-angle-right fa-sm"></i></span></button>
             </div>
         </div>
         <div id="bio" class="text-container">
@@ -132,7 +134,7 @@
         </div>
         <div id="hobby" class="text-container">
             <h3>I ♥</h3>
-            <p class="desc">Art, Music, Drawing, Playing Drums, Photography, Leica, Machine Learning</p>
+            <p>Art, Music, Drawing, Playing Drums, Photography, Leica, Machine Learning</p>
         </div>
         <div id="web" class="text-container">
             <h3>On the web</h3>
@@ -143,8 +145,8 @@
                 <li></li>
             </ul>
         </div>
-    </div>
-    <footer class="footer">© 2022 Takuya Matsuyama. All Rights Reserved</footer>
+        </div>
+        <footer>© 2022 Takuya Matsuyama. All Rights Reserved</footer>
 </body>
 
 </html>
