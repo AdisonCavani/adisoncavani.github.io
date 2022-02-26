@@ -7,7 +7,7 @@
     
     backdrop-filter: blur(10px);
     
-    background-color: var(--nav-bg-color);
+    background-color: var(--nav-bg);
     transition: all .3s ease-in-out;
     transition-property: background-color;
 }
@@ -131,8 +131,8 @@ footer {
         display: flex;
     }
     
-    .nav-menu-res {
-        visibility: collapse;
+    .res-menu {
+        transform: translate3d(0px, 8px, 0px);
     }
 
     .img-container {
