@@ -27,11 +27,13 @@
 }
 
 .nav-title {
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-menu {
-    display: flex;
+    display: none;
     align-items: center;
     flex-direction: row;
     width: auto;
@@ -39,7 +41,7 @@
 }
 
 .menu-entry {
-    display: none;
+    display: flex;
     cursor: pointer;
     padding: 0 .5rem;
     color: inherit;
@@ -122,12 +124,8 @@ footer {
 
 // Responsive layout
 @media screen and (min-width: 48em) {
-    .menu-entry {
+    .nav-menu {
         display: flex;
-    }
-    
-    .res-menu {
-        transform: translate3d(0px, 8px, 0px);
     }
 
     .img-container {

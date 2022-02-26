@@ -1,5 +1,9 @@
 @use 'colors';
 
+a {
+    -webkit-user-drag: none;
+}
+
 .link {
     position: relative;
     text-decoration: none;

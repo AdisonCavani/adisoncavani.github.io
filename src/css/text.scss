@@ -22,10 +22,13 @@ p {
 }
 
 .title {
-    font-size: 1.875rem;
-    line-height: 1.2;
-    letter-spacing: -.05em;
-    font-weight: 700;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'M PLUS Rounded 1c';
+    letter-spacing: -0.05em;
+    overflow-wrap: break-word;
+    line-height: 20px;
+    user-select: none;
 }
 
 .title-link {
