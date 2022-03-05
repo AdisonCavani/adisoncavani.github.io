@@ -1,10 +1,12 @@
+@use 'colors';
+
 .nav-menu-res {
     position: relative;
     visibility: visible;
     margin-left: .5rem;
 }
 
-.res-menu {
+.res-menu-enabled {
     visibility: visible;
     min-width: 14rem;
     
@@ -22,12 +24,18 @@
     border-color: var(--nav-menu-border);
     
     background-color: var(--nav-menu-bg);
-    box-shadow: --nav-menu-shadow;
-    transition: box-shadow .3s ease-in-out;
+    box-shadow: var(--nav-menu-shadow);
+    
+    transition: all .3s ease-in-out;
+    transition-property: background-color, box-shadow;
+}
+
+.res-menu {
+    display: none;
 }
 
 .res-menu-entry {
-    color: inherit;
+    color: var(--text);
     text-decoration: none;
     
     cursor: pointer;
@@ -38,6 +46,8 @@
     padding-top: .4rem;
     padding-bottom: .4rem;
     padding-inline: .8rem;
+    
+    transition: color .3s ease-in-out;
 }
 
 // Responsive layout
