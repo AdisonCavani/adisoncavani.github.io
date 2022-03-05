@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Adison Cavani">
     <title>Document</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/layout.css">
     <link rel="stylesheet" type="text/css" href="css/text.css">
@@ -17,8 +19,12 @@
     <link rel="stylesheet" type="text/css" href="css/button-switch.css">
     <link rel="stylesheet" type="text/css" href="css/theme-switch.css">
 
-    <!-- Theme -->
-    <script src="js/theme-toggle.js"></script>
+    <!-- Fixes 'exports is not defined' -->
+    <script>var exports = {};</script>
+
+    <!-- JS -->
+    <script type="text/javascript" src="js/theme-toggle.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
 
     <!-- FA Icons -->
     <script defer src="https://kit.fontawesome.com/f03b3a9590.js" crossorigin="anonymous"></script>
@@ -52,7 +58,7 @@
                     rel="noopener noreferrer">Source</a>
             </div>
             <div class="nav-btn">
-                <div class="theme-toggle2">
+                <div>
                     <button class="btn-switch" id="theme-toggle">
                         <div class="theme-toggle">
                             <svg class="sun-and-moon" width="24" height="24" viewBox="0 0 24 24">
@@ -75,9 +81,11 @@
                         </div>
                     </button>
                 </div>
-                <div class="nav-menu-res">
-                    <button class="btn-menu"><i class="fa-solid fa-bars"></i></button>
-                    <div class="res-menu">
+                <div id="menu-div" class="nav-menu-res">
+                    <button class="btn-menu" onclick="toggleMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div id="menu" class="res-menu">
                         <a class="res-menu-entry" href="/about">About</a>
                         <a class="res-menu-entry" href="/works">Works</a>
                         <a class="res-menu-entry" href="/about">Posts</a>
