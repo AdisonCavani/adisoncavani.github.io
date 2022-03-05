@@ -42,3 +42,11 @@
 .btn-menu:focus {
     box-shadow: 0px 0px 0px 3px var(--ring-color);
 }
+
+.btn-menu-enabled {
+    background-color: var(--btn-menu-bg-active);
+}
+
+.btn-menu-enabled:hover {
+    background-color: var(--btn-menu-bg-active);
+}
