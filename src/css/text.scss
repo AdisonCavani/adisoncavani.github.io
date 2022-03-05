@@ -1,3 +1,5 @@
+@use 'colors';
+
 .secondary {
     background-color: var(--secondary);
     border-radius: .5rem;
@@ -5,15 +7,16 @@
     padding: .75rem;
     margin-bottom: 1.5rem;
     text-align: center;
-    word-wrap: break-word;
-    
-    transition: all .3s ease-in-out;
-    transition-property: background-color;
 }
 
 p {
+    color: var(--text);
     text-indent: 1em;
     text-align: justify;
+    word-wrap: break-word;
+    
+    transition: all .3s ease-in-out;
+    transition-property: color, background-color;
 }
 
 .desc {

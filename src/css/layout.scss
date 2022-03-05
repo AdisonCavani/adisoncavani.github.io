@@ -44,12 +44,14 @@
     display: flex;
     cursor: pointer;
     padding: 0 .5rem;
-    color: inherit;
+    color: var(--text);
     text-decoration: none;
     outline: 2px solid transparent;
     outline-offset: 2px;
     text-underline-offset: 3px;
     -webkit-user-drag: none;
+    
+    transition: color .3s ease-in-out;
 }
 
 .nav-btn {
