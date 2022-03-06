@@ -3,12 +3,13 @@
         "target": "ES2015",
         "module": "commonjs",
         "strict": true,
+        "noImplicitAny": false,
         "esModuleInterop": true,
         "skipLibCheck": true,
         "removeComments": true,
         "allowJs": false,
         "forceConsistentCasingInFileNames": true,
-        "outDir": "../docs/js"
+        "outDir": "dist"
     },
     "$schema": "https://json.schemastore.org/tsconfig",
     "display": "Recommended",
@@ -16,6 +17,6 @@
         "node_modules"
     ],
     "include": [
-        "js/*"
+        "src"
     ]
 }

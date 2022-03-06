@@ -13,8 +13,9 @@
   },
   "homepage": "https://github.com/AdisonCavani/adisoncavani.github.io#readme",
   "scripts": {
-    "build-scss": "node-sass css -o ../docs/css --output-style compressed --source-map true",
-    "build-ts": "tsc --build"
+    "build-scss": "node-sass src/css -o dist/css --output-style compressed --source-map true",
+    "build-ts": "tsc --build",
+    "start": "nodemon dist/server.js"
   },
   "dependencies": {
     "ejs": "^3.1.6",
@@ -25,6 +26,7 @@
     "@tsconfig/recommended": "^1.0.1",
     "@types/ejs": "^3.1.0",
     "@types/express": "^4.17.13",
+    "@types/node": "^17.0.21",
     "nodemon": "^2.0.15"
   }
 }
