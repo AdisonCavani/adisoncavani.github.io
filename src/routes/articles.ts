@@ -3,7 +3,7 @@ const router = express.Router();
 
 // This path is relative
 router.get('/', (req, res) => {
-    res.render('index');
+    res.send('In articles');
 });
 
 module.exports = router;

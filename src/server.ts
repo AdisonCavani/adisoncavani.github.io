@@ -1,13 +1,15 @@
 import express from 'express';
-const articleRouter = require('./routes/index');
+import path from 'path';
+
+const articleRouter = require('./routes/articles');
+const indexRouter = require('./routes/index');
 const app = express();
 
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-app.use(articleRouter);
+app.use('/articles', articleRouter);
 
-app.get('/', (req, res) => {
-    res.render('index');
-});
+app.use('/', indexRouter);
 
 app.listen(5000);
