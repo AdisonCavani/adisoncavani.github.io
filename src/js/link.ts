@@ -8,5 +8,8 @@ function init() {
 
         if (menu!.children[i].getAttribute("href") == window.location.pathname)
             console.log(`Hit: ${menu!.children[i]}`);
+
+        console.log(menu!.children[i].getAttribute("href"));
     }
+    console.log(window.location.pathname);
 }
