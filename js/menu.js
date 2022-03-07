@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.toggleMenu = void 0;
 function toggleMenu() {
     var _a;
-    var menuDiv = document.getElementById("menu");
+    const menuDiv = document.getElementById("menu");
     menuDiv.className = menuDiv.className === "res-menu"
         ? "res-menu-enabled"
         : "res-menu";
