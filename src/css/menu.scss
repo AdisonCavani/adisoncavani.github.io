@@ -50,6 +50,27 @@
     transition: color .3s ease-in-out;
 }
 
+.menu-entry {
+    display: flex;
+    cursor: pointer;
+    padding: .5rem;
+    color: var(--text);
+    text-decoration: none;
+    text-underline-offset: 3px;
+    -webkit-user-drag: none;
+    margin-inline-start: .5rem;
+    
+    transition: color .3s ease-in-out, box-shadow .225s ease-in-out;
+}
+
+.menu-entry:hover {
+    text-decoration: underline;
+}
+
+.menu-entry:focus {
+    box-shadow: 0px 0px 0px 3px var(--ring-color);
+}
+
 // Responsive layout
 @media screen and (min-width: 48em) {    
     .nav-menu-res {

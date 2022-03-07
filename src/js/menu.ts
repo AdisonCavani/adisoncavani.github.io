@@ -1,6 +1,6 @@
 // Toggle menu visibility on click
 export function toggleMenu() {
-    var menuDiv = document.getElementById("menu")!;
+    const menuDiv = document.getElementById("menu")!;
     menuDiv.className = menuDiv.className === "res-menu"
         ? "res-menu-enabled"
         : "res-menu";
