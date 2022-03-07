@@ -24,8 +24,10 @@ function includeHTML() {
             };
             xhttp.open("GET", file, true);
             xhttp.send();
+            init();
             // Exit the function
             return;
         }
+        init();
     }
 }

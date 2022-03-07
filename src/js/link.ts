@@ -1,7 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-    init();
-});
-
 function init() {
     const menu = document.getElementById("nav-menu");
 
