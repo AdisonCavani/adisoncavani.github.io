@@ -1,5 +1,7 @@
 "use strict";
-window.onload = init;
+document.addEventListener("DOMContentLoaded", function () {
+    init();
+});
 function init() {
     const menu = document.getElementById("nav-menu");
     for (var i = 0; i < menu.children.length; i++) {
