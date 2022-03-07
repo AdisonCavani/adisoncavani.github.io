@@ -22,7 +22,9 @@ function includeHTML() {
             };
             xhttp.open("GET", file, true);
             xhttp.send();
+            init();
             return;
         }
+        init();
     }
 }
