@@ -31,9 +31,6 @@ const theme = {
 reflectPreference();
 window.onload = () => {
     reflectPreference();
-    document
-        .querySelector('#theme-toggle')
-        .addEventListener('click', onClick);
 };
 window
     .matchMedia('(prefers-color-scheme: dark)')
