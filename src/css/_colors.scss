@@ -1,6 +1,7 @@
 :root {
     --text: #000;
-    --link-fg: var(--btn-bg);
+    --link-fg: rgb(61, 122, 237);
+    --link-current-bg: #88ccca;
     --ring-color: rgba(66, 153, 225, 0.6);
     
     --bg: rgb(240, 231, 219);
@@ -56,6 +57,8 @@
 html[data-theme="dark"] {
     --text: rgba(255, 255, 255, 0.92);
     --link-fg: #ff63c3;
+    --link-current-bg: #88ccca;
+    --ring-color: rgba(66, 153, 225, 0.6);
     
     --bg: #202023;
     --panel-bg: #2b2b2d;

@@ -59,8 +59,9 @@
     text-underline-offset: 3px;
     -webkit-user-drag: none;
     margin-inline-start: .5rem;
+    background-color: transparent;
     
-    transition: color .3s ease-in-out, box-shadow .225s ease-in-out;
+    transition: color .3s ease-in-out, background-color .1s ease-in-out, box-shadow .225s ease-in-out;
 }
 
 .menu-entry:hover {
@@ -69,6 +70,10 @@
 
 .menu-entry:focus {
     box-shadow: 0px 0px 0px 3px var(--ring-color);
+}
+
+.menu-entry-current {
+    background-color: var(--link-current-bg);
 }
 
 // Responsive layout
