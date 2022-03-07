@@ -20,11 +20,13 @@ jobs:
           mkdir -p docs/css
           mkdir -p docs/js
           mkdir -p docs/img
+          mkdir -p docs/shared
           cd src
           npm ci
           npm run build-scss
           npm run build-ts
           cp -R *.html ../docs
+          cp -R shared/*.html ../docs/shared
           cp -R img/* ../docs/img
 
       - name: Deploy 🚀
