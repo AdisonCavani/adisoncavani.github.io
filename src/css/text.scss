@@ -1,6 +1,7 @@
 @use 'colors';
 
-.secondary {
+desc {
+    display: block;
     background-color: var(--secondary);
     border-radius: .5rem;
     
