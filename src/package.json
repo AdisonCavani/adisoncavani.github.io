@@ -16,10 +16,8 @@
     "build-scss": "node-sass css -o ../docs/css --output-style compressed --source-map true",
     "build-ts": "tsc --build"
   },
-  "dependencies": {
-    "node-sass": "^7.0.1"
-  },
   "devDependencies": {
-    "@tsconfig/recommended": "^1.0.1"
+    "node-sass": "^7.0.1",
+    "typescript": "^4.6.2"
   }
 }
