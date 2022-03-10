@@ -1,5 +1,5 @@
-import Link from "next/link";
 // import styles from "../styles/Home.module.css";
+import Link from "next/link";
 import fs from "fs";
 
 const Home = ({ slugs }) => (
@@ -8,7 +8,7 @@ const Home = ({ slugs }) => (
     {slugs.map((slug) => {
       return (
         <div key={slug}>
-          <Link href={"/blog/" + slug}>
+          <Link href={"/blog/" + slug} as={"/blog/" + slug}>
             <a>{"/blog/" + slug}</a>
           </Link>
         </div>
