@@ -8,6 +8,7 @@ import {
   InputGroup,
   InputRightElement,
   Text,
+  Box,
 } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
 import BlogPost from "../components/blog-post";
@@ -35,36 +36,27 @@ export default function Blog({ posts }) {
       <Head>
         <title>Blog - Benjamin Carlson</title>
       </Head>
-      <Layout>
-        <Stack
-          as="main"
-          spacing={8}
-          justifyContent="center"
+      <Stack>
+        <Flex
+          flexDirection="column"
+          justifyContent="flex-start"
           alignItems="flex-start"
-          m="0 auto 4rem auto"
-          maxWidth="700px"
         >
-          <Flex
-            flexDirection="column"
-            justifyContent="flex-start"
-            alignItems="flex-start"
-            maxWidth="700px"
-            px={4}
-          >
-            <Section>
-              <Heading letterSpacing="tight" mb={4} as="h1" size="2xl">
-                Blog
-              </Heading>
-            </Section>
-            <Section delay="0.1">
-              <Text>
-                I&apos;ve been writing online since 2014, mostly about web
-                development and tech careers. In total, I&apos;ve written 68
-                articles on my blog. Use the search below to filter by title.
-              </Text>
-            </Section>
+          <Section>
+            <Heading letterSpacing="tight" mb={4} as="h1" size="2xl">
+              Blog
+            </Heading>
+          </Section>
+          <Section delay="0.1">
+            <Text>
+              I&apos;ve been writing online since 2014, mostly about web
+              development and tech careers. In total, I&apos;ve written 68
+              articles on my blog. Use the search below to filter by title.
+            </Text>
+          </Section>
+          <Box w="100%">
             <Section delay="0.2">
-              <InputGroup mb={4} mr={4} w="100%">
+              <InputGroup mb={4} mr={4}>
                 <Input
                   aria-label="Search articles"
                   placeholder="Search articles"
@@ -75,15 +67,15 @@ export default function Blog({ posts }) {
                 </InputRightElement>
               </InputGroup>
             </Section>
-            <Section delay="0.3">
-              {!filteredBlogPosts.length && "No posts found."}
-              {filteredBlogPosts.map((frontMatter) => (
-                <BlogPost key={frontMatter.title} {...frontMatter} />
-              ))}
-            </Section>
-          </Flex>
-        </Stack>
-      </Layout>
+          </Box>
+          <Section delay="0.3">
+            {!filteredBlogPosts.length && "No posts found."}
+            {filteredBlogPosts.map((frontMatter) => (
+              <BlogPost key={frontMatter.title} {...frontMatter} />
+            ))}
+          </Section>
+        </Flex>
+      </Stack>
     </>
   );
 }

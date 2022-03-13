@@ -8,7 +8,7 @@ import {
   Flex,
   Stack,
   Avatar,
-  Container,
+  Box,
 } from "@chakra-ui/react";
 import IData from "../../interfaces/idata";
 import { motion } from "framer-motion";
@@ -35,7 +35,7 @@ export default function BlogLayout({ children, data }) {
       transition={{ duration: 0.4, type: "easeInOut" }}
       style={{ position: "relative" }}
     >
-      <Container>
+      <Box>
         <Head>
           <title>{data.title} - AdisonCavani</title>
           <meta name="description" content={data.description}></meta>
@@ -80,7 +80,7 @@ export default function BlogLayout({ children, data }) {
           </Flex>
           {children}
         </Stack>
-      </Container>
+      </Box>
     </motion.article>
   );
 }
