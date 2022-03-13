@@ -9,7 +9,6 @@ import MDXComponents from "../../components/mdx-components";
 import BlogLayout from "../../components/layouts/post";
 import IData from "../../interfaces/idata";
 import readingTime from "reading-time";
-import Layout from "../../components/layouts/article";
 
 // Custom components/renderers to pass to MDX.
 // Since the MDX files aren't loaded by webpack, they have no knowledge of how
