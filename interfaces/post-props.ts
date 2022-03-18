@@ -5,4 +5,5 @@ export default interface PostProps {
   publishedAt: string;
   tags: string;
   languages: string;
+  slug: string;
 }

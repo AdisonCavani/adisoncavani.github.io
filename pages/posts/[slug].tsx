@@ -40,7 +40,10 @@ export const getStaticProps = async ({ params }) => {
   return {
     props: {
       source: mdxSource,
-      frontMatter: data,
+      frontMatter: {
+        data,
+        slug: params.slug,
+      },
     },
   };
 };
