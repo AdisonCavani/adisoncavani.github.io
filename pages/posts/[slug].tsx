@@ -6,6 +6,7 @@ import { serialize } from "next-mdx-remote/serialize";
 import { postFilePaths, POSTS_PATH } from "@utils/mdx-utils";
 import MDXComponents from "@components/mdx-components";
 import PostProps from "@interfaces/post-props";
+import PostLayout from "@components/layout/post-layout";
 
 export default function PostPage({
   source,
@@ -15,15 +16,9 @@ export default function PostPage({
   frontMatter: PostProps;
 }) {
   return (
-    <>
-      <div>
-        <h1>{frontMatter.title}</h1>
-        {frontMatter.summary && <p>{frontMatter.summary}</p>}
-      </div>
-      <main>
-        <MDXRemote {...source} components={MDXComponents} />
-      </main>
-    </>
+    <PostLayout frontMatter={frontMatter}>
+      <MDXRemote {...source} components={MDXComponents} />
+    </PostLayout>
   );
 }
 
