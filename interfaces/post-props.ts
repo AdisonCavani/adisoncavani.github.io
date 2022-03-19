@@ -4,6 +4,5 @@ export default interface PostProps {
   summary: string;
   publishedAt: string;
   tags: string;
-  languages: string;
   slug: string;
 }

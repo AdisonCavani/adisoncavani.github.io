@@ -5,6 +5,10 @@ const nextConfig = {
     githubRepo: "https://github.com/AdisonCavani/adisoncavani.github.io",
     githubBranch: "tailwind",
   },
+  images: {
+    loader: "akamai",
+    path: "",
+  },
 };
 
 module.exports = nextConfig;
