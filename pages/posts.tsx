@@ -54,7 +54,7 @@ export default function Blog({ posts }) {
             </Text>
           </Section>
           <Box w="100%">
-            <Section delay="0.2">
+            <Section delay="0.1">
               <InputGroup mb={4} mr={4}>
                 <Input
                   aria-label="Search articles"
@@ -67,17 +67,26 @@ export default function Blog({ posts }) {
               </InputGroup>
             </Section>
           </Box>
-          <Section delay="0.3">
-            {!filteredBlogPosts.length && "No posts found."}
+          <Section delay=".1">
             {filteredBlogPosts.map((frontMatter) => (
               <BlogPost key={frontMatter.title} {...frontMatter} />
             ))}
+            {!filteredBlogPosts.length && <NoPostFound />}
           </Section>
         </Flex>
       </Stack>
     </>
   );
 }
+
+const NoPostFound = () => {
+  return (
+    <Stack>
+      <Heading>Oops!</Heading>
+      <Text>No post found</Text>
+    </Stack>
+  );
+};
 
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter();
