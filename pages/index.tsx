@@ -8,7 +8,7 @@ import {
   Link,
   useColorModeValue,
 } from "@chakra-ui/react";
-import Layout from "@components/layouts/article";
+import Layout from "@components/layouts/article-layout";
 import Section from "@components/section";
 import Paragraph from "@components/paragraph";
 import { ChevronRightIcon } from "@chakra-ui/icons";

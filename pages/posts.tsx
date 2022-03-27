@@ -11,7 +11,7 @@ import {
   Box,
 } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
-import BlogPost from "@components/blog-post";
+import BlogPost from "@components/post";
 import { getAllFilesFrontMatter } from "@lib/mdxUtils";
 import Section from "@components/section";
 

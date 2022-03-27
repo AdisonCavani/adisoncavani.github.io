@@ -6,14 +6,9 @@ import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
 import { postFilePaths, POSTS_PATH } from "@lib/mdxUtils";
 import MDXComponents from "@components/mdx-components";
-import PostLayout from "@components/layouts/post";
+import PostLayout from "@components/layouts/post-layout";
 import PostProps from "@interfaces/post-props";
 import readingTime from "reading-time";
-
-// Custom components/renderers to pass to MDX.
-// Since the MDX files aren't loaded by webpack, they have no knowledge of how
-// to handle import statements. Instead, you must include components in scope
-// here.
 
 export default function PostPage({
   source,
