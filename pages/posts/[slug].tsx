@@ -4,10 +4,10 @@ import path from "path";
 import matter from "gray-matter";
 import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
-import { postFilePaths, POSTS_PATH } from "../../lib/mdxUtils";
-import MDXComponents from "../../components/mdx-components";
-import BlogLayout from "../../components/layouts/post";
-import IData from "../../interfaces/idata";
+import { postFilePaths, POSTS_PATH } from "@lib/mdxUtils";
+import MDXComponents from "@components/mdx-components";
+import BlogLayout from "@components/layouts/post";
+import PostProps from "@interfaces/post-props";
 import readingTime from "reading-time";
 
 // Custom components/renderers to pass to MDX.
@@ -38,12 +38,14 @@ export const getStaticProps = async ({ params }) => {
     scope: data,
   });
 
-  const enhancedData: IData = {
+  const enhancedData: PostProps = {
     author: data.author,
     publishedAt: data.publishedAt,
     title: data.title,
     summary: data.summary,
     readingTime: readingTime(content).text,
+    slug: params.slug,
+    tags: "",
   };
 
   return {

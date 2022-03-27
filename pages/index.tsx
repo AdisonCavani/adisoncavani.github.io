@@ -8,11 +8,11 @@ import {
   Link,
   useColorModeValue,
 } from "@chakra-ui/react";
-import Layout from "../components/layouts/article";
-import Section from "../components/section";
-import Paragraph from "../components/paragraph";
+import Layout from "@components/layouts/article";
+import Section from "@components/section";
+import Paragraph from "@components/paragraph";
 import { ChevronRightIcon } from "@chakra-ui/icons";
-import { BioSection, BioYear } from "../components/bio";
+import { BioSection, BioYear } from "@components/bio";
 
 const Page = () => {
   return (

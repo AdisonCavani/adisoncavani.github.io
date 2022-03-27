@@ -10,7 +10,7 @@ import {
   Avatar,
   Box,
 } from "@chakra-ui/react";
-import IData from "../../interfaces/idata";
+import PostProps from "@interfaces/post-props";
 import { motion } from "framer-motion";
 
 export default function BlogLayout({ children, data }) {
