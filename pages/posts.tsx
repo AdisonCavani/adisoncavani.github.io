@@ -13,7 +13,6 @@ import {
 import { SearchIcon } from "@chakra-ui/icons";
 import BlogPost from "@components/blog-post";
 import { getAllFilesFrontMatter } from "@lib/mdxUtils";
-import Layout from "@components/layouts/article";
 import Section from "@components/section";
 
 export default function Blog({ posts }) {
