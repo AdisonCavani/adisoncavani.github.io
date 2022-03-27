@@ -9,11 +9,20 @@ import {
   Stack,
   Avatar,
   Box,
+  Button,
 } from "@chakra-ui/react";
 import PostProps from "@interfaces/post-props";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { EditIcon } from "@chakra-ui/icons";
 
-export default function BlogLayout({ children, data }) {
+export default function PostLayout({
+  children,
+  frontMatter,
+}: {
+  children: any;
+  frontMatter: PostProps;
+}) {
   const { colorMode } = useColorMode();
   const textColor = {
     light: "gray.700",
@@ -37,8 +46,8 @@ export default function BlogLayout({ children, data }) {
     >
       <Box>
         <Head>
-          <title>{data.title} - AdisonCavani</title>
-          <meta name="description" content={data.description}></meta>
+          <title>{frontMatter.title} - AdisonCavani</title>
+          <meta name="description" content={frontMatter.summary}></meta>
         </Head>
         <Stack
           as="article"
@@ -56,7 +65,7 @@ export default function BlogLayout({ children, data }) {
             w="100%"
           >
             <Heading letterSpacing="tight" mb={2} as="h1" size="2xl">
-              {data.title}
+              {frontMatter.title}
             </Heading>
             <Flex
               justify="space-between"
@@ -67,18 +76,26 @@ export default function BlogLayout({ children, data }) {
               mb={4}
             >
               <Flex align="center">
-                <Avatar size="xs" name={data.author} mr={2} />
+                <Avatar size="xs" name={frontMatter.author} mr={2} />
                 <Text fontSize="sm" color={textColor[colorMode]}>
-                  {data.author} /{" "}
-                  {format(parseISO(data.publishedAt), "MMMM dd, yyyy")}
+                  {frontMatter.author} /{" "}
+                  {format(parseISO(frontMatter.publishedAt), "MMMM dd, yyyy")}
                 </Text>
               </Flex>
               <Text fontSize="sm" color="gray.500" minWidth="100px" mt={[2, 0]}>
-                {data.readingTime}
+                {frontMatter.readingTime}
               </Text>
             </Flex>
           </Flex>
           {children}
+          <Flex>
+            <Link
+              href={`${process.env.githubRepo}/edit/${process.env.githubBranch}/posts/${frontMatter.slug}.mdx`}
+              passHref
+            >
+              <Button leftIcon={<EditIcon />}>Edit on Github</Button>
+            </Link>
+          </Flex>
         </Stack>
       </Box>
     </motion.article>
