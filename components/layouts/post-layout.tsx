@@ -89,12 +89,13 @@ export default function PostLayout({
           </Flex>
           {children}
           <Flex>
-            <Link
+            <a
               href={`${process.env.githubRepo}/edit/${process.env.githubBranch}/posts/${frontMatter.slug}.mdx`}
-              passHref
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <Button leftIcon={<EditIcon />}>Edit on Github</Button>
-            </Link>
+            </a>
           </Flex>
         </Stack>
       </Box>
