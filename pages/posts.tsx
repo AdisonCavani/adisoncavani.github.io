@@ -12,9 +12,7 @@ import {
   InputLeftAddon,
   Menu,
   MenuButton,
-  Button,
   MenuList,
-  MenuItem,
   MenuItemOption,
   MenuOptionGroup,
 } from "@chakra-ui/react";
@@ -64,15 +62,8 @@ export default function Blog({ posts }) {
         >
           <Section>
             <Heading letterSpacing="tight" mb={4} as="h1" size="2xl">
-              Blog
+              All Posts
             </Heading>
-          </Section>
-          <Section delay="0.1">
-            <Text>
-              I&apos;ve been writing online since 2014, mostly about web
-              development and tech careers. In total, I&apos;ve written 68
-              articles on my blog. Use the search below to filter by title.
-            </Text>
           </Section>
           <Box w="100%">
             <Section delay="0.1">
