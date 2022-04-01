@@ -18,6 +18,7 @@ const Pre = ({ children }: Props) => {
   }
   const onCopy = () => {
     setCopied(true)
+    // @ts-ignore: Object is possibly 'null'.
     navigator.clipboard.writeText(textInput.current.textContent)
     setTimeout(() => {
       setCopied(false)

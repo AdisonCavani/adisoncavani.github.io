@@ -29,7 +29,7 @@ export const getStaticProps: GetStaticProps<{
   prev?: { slug: string; title: string }
   next?: { slug: string; title: string }
 }> = async ({ params }) => {
-  const slug = (params.slug as string[]).join('/')
+  const slug = (params?.slug as string[]).join('/')
   const allPosts = await getAllFilesFrontMatter('blog')
   const postIndex = allPosts.findIndex((post) => formatSlug(post.slug) === slug)
   const prev: { slug: string; title: string } = allPosts[postIndex + 1] || null

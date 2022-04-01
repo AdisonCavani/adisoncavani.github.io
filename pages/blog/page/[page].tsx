@@ -25,6 +25,7 @@ export const getStaticProps: GetStaticProps<{
   pagination: { currentPage: number; totalPages: number }
 }> = async (context) => {
   const {
+    //@ts-ignore
     params: { page },
   } = context
   const posts = await getAllFilesFrontMatter('blog')

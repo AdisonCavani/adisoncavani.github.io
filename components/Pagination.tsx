@@ -2,25 +2,17 @@ import Link from '@components/Link'
 
 interface Props {
   totalPages: number
-  totalPosts: number
   currentPage: number
 }
 
-export default function Pagination({ totalPages, totalPosts, currentPage }: Props) {
+export default function Pagination({ totalPages, currentPage }: Props) {
   const prevPage = currentPage - 1 > 0
   const nextPage = currentPage + 1 <= totalPages
 
   return (
     <div className="flex items-center justify-between border-t border-gray-200 bg-white px-4 py-3 sm:px-6">
-      <MobileNavigation totalPages={totalPages} totalPosts={totalPosts} currentPage={currentPage} />
+      <MobileNavigation totalPages={totalPages} currentPage={currentPage} />
       <div className="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between">
-        <div>
-          <p className="text-sm text-gray-700">
-            Showing <span className="font-medium">{currentPage}</span> to{' '}
-            <span className="font-medium">{totalPages}</span> of{' '}
-            <span className="font-medium">{totalPosts}</span> posts
-          </p>
-        </div>
         <div>
           <nav
             className="relative z-0 inline-flex -space-x-px rounded-md shadow-sm"
@@ -93,7 +85,7 @@ export default function Pagination({ totalPages, totalPosts, currentPage }: Prop
   )
 }
 
-function MobileNavigation({ totalPages, totalPosts, currentPage }: Props) {
+function MobileNavigation({ totalPages, currentPage }: Props) {
   const prevPage = currentPage - 1 > 0
   const nextPage = currentPage + 1 <= totalPages
 
