@@ -1,6 +1,6 @@
-import SocialIcon from '@/components/social-icons'
-import Image from '@/components/Image'
-import { PageSEO } from '@/components/SEO'
+import SocialIcon from '@components/social-icons'
+import Image from '@components/Image'
+import { PageSEO } from '@components/SEO'
 import { ReactNode } from 'react'
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter'
 
@@ -10,7 +10,7 @@ interface Props {
 }
 
 export default function AuthorLayout({ children, frontMatter }: Props) {
-  const { name, avatar, occupation, company, email, twitter, linkedin, github } = frontMatter
+  const { name, avatar, occupation, company, email, github } = frontMatter
 
   return (
     <>
@@ -36,8 +36,6 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
             <div className="flex space-x-3 pt-6">
               <SocialIcon kind="mail" href={`mailto:${email}`} />
               <SocialIcon kind="github" href={github} />
-              <SocialIcon kind="linkedin" href={linkedin} />
-              <SocialIcon kind="twitter" href={twitter} />
             </div>
           </div>
           <div className="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">{children}</div>
