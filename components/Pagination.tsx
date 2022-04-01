@@ -40,22 +40,7 @@ export default function Pagination({ totalPages, currentPage }: Props) {
                 </svg>
               </Link>
             )}
-            <Link
-              href="/"
-              aria-current="page"
-              className="relative z-10 inline-flex items-center border border-indigo-500 bg-indigo-50 px-4 py-2 text-sm font-medium text-indigo-600"
-            >
-              1
-            </Link>
-            <span className="relative inline-flex items-center border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700">
-              ...
-            </span>
-            <Link
-              href="/"
-              className="relative inline-flex items-center border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50"
-            >
-              10
-            </Link>
+            {totalPages <= 6 && <UpToSix totalPages={totalPages} currentPage={currentPage} />}
             {nextPage && (
               <Link
                 href={`/blog/page/${currentPage + 1}`}
@@ -108,5 +93,34 @@ function MobileNavigation({ totalPages, currentPage }: Props) {
         </Link>
       )}
     </div>
+  )
+}
+
+function UpToSix({ totalPages, currentPage }: { totalPages: number; currentPage: number }) {
+  return (
+    <>
+      {[...Array(totalPages)].map((x, i) => (
+        <>
+          {currentPage === i + 1 ? (
+            <button
+              key={i}
+              aria-current="page"
+              className="relative z-10 inline-flex items-center border border-indigo-500 bg-indigo-50 px-4 py-2 text-sm font-medium text-indigo-600"
+            >
+              {i + 1}
+            </button>
+          ) : (
+            <Link
+              key={i}
+              href={currentPage - 1 === 1 ? `/blog/` : `/blog/page/${i + 1}`}
+              aria-current="page"
+              className="relative inline-flex items-center border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50"
+            >
+              {i + 1}
+            </Link>
+          )}
+        </>
+      ))}
+    </>
   )
 }
